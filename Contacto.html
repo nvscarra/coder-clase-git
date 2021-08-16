@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body class="grid" >
+    <div class="nuevoLogo">
+        <header>
+            <nav>
+                <ul id="menu">
+    
+                    <li><a href="index.html">Home</a></li>
+    
+                    <li><a href="#">Obras Sociales</a>
+                        <ul>
+                            <li><a href="pami.html">PAMI</a></li>
+                            <li><a href="ioma.html">IOMA</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="farmaciasdeturno.html">Farmacias de Turno</a></li>
+                </ul>
+            </nav>
+           
+        </header>
+    </div>
+    
+    
+    <section class="contacto">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZcKsDRhIorRK3qxm3_5XB5-Y0Gu2CpTUKw&usqp=CAU"
+            alt="imagenContacto">
+    </section>
+    
+
+
+
+    <section class="contacto2">
+        <form action="#" method="GET">
+            
+                <label class="datos" for="datos">Dejanos tus datos y nosotros nos comunicamos con vos</label>
+
+
+                    <div>
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="text" name="apellidos" placeholder="Apellido" required>
+                    <input type="number" name="dni" placeholder="Numero de DNI" required>
+                    <br>
+                    
+                        <input type="text" name="email" placeholder="Correo Electronico" required>
+                        <input type="number" number="numeroTelefonico" placeholder="Numero Telefonico" required>
+
+                        <br><br>
+                        
+                            <label for="franjaHoraria">Rango Horario para llamarte</label>
+                            <select name="franjaHoraria" id="">
+                                <option value="franjaHoraria">9-12 Hs</option>
+                                <option value="franjaHoraria">13-16 Hs</option>
+                                <option value="franjaHoraria">17-20 Hs</option>
+                            </select>
+                            <br><br>
+                            <label for="preguntaChekbox">¿Queres que te llamemos?</label>
+                            <input type="checkbox">
+                            <br>
+                            <label for="preguntaChekbox">¿Queres recibir las mejores promos en tu email?</label>
+                            <input type="checkbox">
+                            <br><br>
+                            <textarea name="comenatriosAdicionales" id="" cols="30" rows="10"
+                                placeholder="Comentarios Adicionales"></textarea>
+                            <br><br>
+                            <input type="reset">
+                            <input type="submit">
+                        
+
+
+        </form>
+    </section>
+
+
+
+
+    <footer>
+        <h4 class="footer"> <a
+                href="https://www.google.com.ar/maps/place/Farmacia+Ienni/@-34.7019684,-58.7422786,19z/data=!4m5!3m4!1s0x95bcea9f4a460a11:0x4a4f660b3cada3ab!8m2!3d-34.7020567!4d-58.7429301">Av.
+                25 de Mayo 5200, Merlo, Buenos Aires, Argentina</a> <strong><a href="Contacto.html">Contacto</a>
+            </strong></h4>
+    </footer>
+
+</body>
+
+</html>

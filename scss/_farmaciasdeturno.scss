@@ -1,0 +1,49 @@
+body {
+    .tituloFarmacias{
+        text-align: center;
+        
+        @include estiloturno(red, 50px, 900)
+    }
+
+    .farmasTurno {
+
+        @include flex(inline-flex, space-between, wrap);
+        
+
+             
+
+        .grid10{
+            display: grid;
+            grid-template-columns: 30vh ;
+            grid-template-rows: 3vw 10vw ;
+            grid-template-areas: 
+            "titulo"
+            "parrafo";
+            padding: 9px;
+
+
+            .tituloGrid10{
+                background-color: burlywood;
+                grid-area: titulo;
+                padding: 1px;
+                text-align: center;
+
+                @include estiloContacto(blue, 30px)
+            }
+
+            .textoGrid10{
+                background-color: cornsilk;
+                grid-area: parrafo;
+            
+            }
+            
+        } 
+        
+
+         
+    }
+
+
+
+
+}
