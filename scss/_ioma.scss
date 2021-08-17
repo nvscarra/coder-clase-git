@@ -1,31 +1,35 @@
 body{
 
     .imagenIoma1{
-        display: inline-flex;
-        margin: 100px;
+       
+        margin:0 350px;
        
        
        
     }
 
-    .imagenIoma{
-        height: 820px;
-        width: auto;
-        margin: 10px;
-       
-    }
 
     .parrafoIoma{
         font-size: 25px;
         margin: 25px;
-        color: black;
+        color:white;
+        padding: 20px;
     }
 
     .parrafoIoma1{
         font-size: 25px;
         margin: 25px;
-        color: black;
+        color:white;
         list-style: disc;
+        display: flex;
+        flex-direction:row;
+        padding: 20px;
+        align-items: center;
+        
+
+    }
+    .fondo{
+        background-image: url(/kljabsfoihef.jpg);
     }
 
 

@@ -20,10 +20,16 @@ body {
             "titulo"
             "parrafo";
             padding: 9px;
+            
+                
+
+            
+            
+
 
 
             .tituloGrid10{
-                background-color: burlywood;
+                background-color: #03989e;
                 grid-area: titulo;
                 padding: 1px;
                 text-align: center;
@@ -32,7 +38,7 @@ body {
             }
 
             .textoGrid10{
-                background-color: cornsilk;
+                background-color: #f4bc33;
                 grid-area: parrafo;
             
             }

@@ -1,133 +1,58 @@
 header{
-    display: flex;
-    justify-content: flex-end;
-
-    nav{
-        display: flex; 
-        justify-content:flex-end; 
-        width: 100%;
-       padding: 15px;
-      
-
-        ul#menu {
-             width: 100vw;
-             margin: 25px 0;
-             padding: 10px;
-             font-size: 25px;
-             height: 50px;
-             display: flex;
-             flex-direction:row;
-             justify-content:center;
-             border-radius: 15px;
-
-             
-             
-               li{
-                   color: #fff;
-                   float: left;
-                   list-style: none;
-                   margin: 0 45px ;
-
-                   hover{
-                    color: #aaa073;
-                    cursor:pointer;
-                   }
-
-                    a {
-                        color: blue;
-                        width: 10px;
-                        margin: 5px;
-
-                        @extend %boxShadow;
-                        
-                    }
-
-                    ul{
-
-                        li{
-                            float:none;
-                            color: #fff;
-                            width: 100%;
-                            margin: 1% 0%;
-
-                            a{
-                                color: #fff;
-                               
-                                hover{
-                                    color: blue;
-                                    cursor:pointer;
-                                }
-                            }
-                        }
-
-
-                    }
-
-
-
-                }
-
-
-                  
-
-                  
-                 
-                     
-                  
-
-                
-        }
-
-       
-    }
-    
-    
-
-        
-}
-
-
-
-
-  
-     
-   ul#menu ul {
-    display: none;
+    background-color:#03989e;
+    height: 20vh;
+    width: 100vw;
     position: relative;
-    top: 2px;
-    background: #6BEEB0;
-    color:blue;
-    
-    
-
-
-}
-     
-   ul#menu ul li{
-    float:none;
-    color: #fff;
-    width: 100%;
-    margin: 1% 0%;
-}
-    
-    
-   ul#menu ul li a{
-    color: #fff;
-}
-     
-   ul#menu ul li a:hover{
-    color: blue;
-    cursor:pointer;
 }
 
-ul#menu li:hover ul,
-   ul#menu ul li:hover ul,
-   ul#menu ul ul li:hover ul,
-   ul#menu li.iehover ul,
-   ul#menu ul li.iehover ul,
-   ul#menu ul ul li.iehover ul {
-    display: block;
-    cursor:pointer;
-   }
+.logo{
+    height: 20vh;
+    width: 10vw;
+    position: absolute;
+    left: 2vw;
+    background-image: url(/aslnasdf.png);
+    background-size: contain;
+    }
+   
+
+
+.ul{
+    height: 15vh;
+    width: 60vw;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+.ul .li{
+
+width: 10vw;
+
+margin: 10px;
+
+text-align: center;
+
+height: 10vh;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+border-radius: 10px;
+
+transition: 0.5s;
+}
+
+.ul .li:hover{
+    background-color: white;
+    color: black;
+}
+       
    
 
