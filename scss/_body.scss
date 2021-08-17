@@ -1,10 +1,16 @@
 body{
     font-family: 'Nunito', sans-serif;
-    
+    background-image: linear-gradient( White, MistyRose);
 
     
 
-   
+    .nuevoLogo{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        background-image: $gradiente;
+    }
 
     .seccion1{
 
@@ -24,26 +30,20 @@ body{
     
     
         .nuevaImagen{
-            
+            background-image: url(https://mecaluxar.cdnwm.com/blog/img/robots-de-farmacia.1.10.jpg);
             position: relative;
             height: 100%;
             width: auto;
-            background-image:url(/imagensection2.png);
-        
-           
-           
-           
+            opacity: 0.4;
+            filter: alpha(opacity=40);
     
     
             .seccion2{
-                margin: 90px;
                 margin: 30px;
                 opacity:none;
     
                 .textoParrafo{
                     font-size: 35px; 
-                    color: white;
-                    padding: 50px;
                 }
             }
         }
@@ -59,12 +59,11 @@ body{
     
 
     .footer{
-        background-color: #039890;
-        text-align: center;
+        background-color: #6BEEB0;
+        /* color:#6BEEB0; */
     }
     
 
 
-
-
 }
+

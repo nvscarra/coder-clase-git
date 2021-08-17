@@ -1,58 +1,133 @@
 header{
-    background-color:#03989e;
-    height: 20vh;
-    width: 100vw;
-    position: relative;
-}
-
-.logo{
-    height: 20vh;
-    width: 10vw;
-    position: absolute;
-    left: 2vw;
-    background-image: url(/aslnasdf.png);
-    background-size: contain;
-    }
-   
-
-
-.ul{
-    height: 15vh;
-    width: 60vw;
-    color: white;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 0;
-}
+    justify-content: flex-end;
 
-.ul .li{
+    nav{
+        display: flex; 
+        justify-content:flex-end; 
+        width: 100%;
+       padding: 15px;
+      
 
-width: 10vw;
+        ul#menu {
+             width: 100vw;
+             margin: 25px 0;
+             padding: 10px;
+             font-size: 25px;
+             height: 50px;
+             display: flex;
+             flex-direction:row;
+             justify-content:center;
+             border-radius: 15px;
 
-margin: 10px;
+             
+             
+               li{
+                   color: #fff;
+                   float: left;
+                   list-style: none;
+                   margin: 0 45px ;
 
-text-align: center;
+                   hover{
+                    color: #aaa073;
+                    cursor:pointer;
+                   }
 
-height: 10vh;
+                    a {
+                        color: blue;
+                        width: 10px;
+                        margin: 5px;
 
-display: flex;
+                        @extend %boxShadow;
+                        
+                    }
 
-justify-content: center;
+                    ul{
 
-align-items: center;
+                        li{
+                            float:none;
+                            color: #fff;
+                            width: 100%;
+                            margin: 1% 0%;
 
-border-radius: 10px;
+                            a{
+                                color: #fff;
+                               
+                                hover{
+                                    color: blue;
+                                    cursor:pointer;
+                                }
+                            }
+                        }
 
-transition: 0.5s;
-}
 
-.ul .li:hover{
-    background-color: white;
-    color: black;
-}
+                    }
+
+
+
+                }
+
+
+                  
+
+                  
+                 
+                     
+                  
+
+                
+        }
+
        
+    }
+    
+    
+
+        
+}
+
+
+
+
+  
+     
+   ul#menu ul {
+    display: none;
+    position: relative;
+    top: 2px;
+    background: #6BEEB0;
+    color:blue;
+    
+    
+
+
+}
+     
+   ul#menu ul li{
+    float:none;
+    color: #fff;
+    width: 100%;
+    margin: 1% 0%;
+}
+    
+    
+   ul#menu ul li a{
+    color: #fff;
+}
+     
+   ul#menu ul li a:hover{
+    color: blue;
+    cursor:pointer;
+}
+
+ul#menu li:hover ul,
+   ul#menu ul li:hover ul,
+   ul#menu ul ul li:hover ul,
+   ul#menu li.iehover ul,
+   ul#menu ul li.iehover ul,
+   ul#menu ul ul li.iehover ul {
+    display: block;
+    cursor:pointer;
+   }
    
 
