@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px;
@@ -12,6 +13,10 @@ header {
   height: 20vh;
   width: 100vw;
   position: relative;
+}
+header a {
+  color: blue;
+  font-size: 30px;
 }
 
 .logo {
@@ -43,7 +48,6 @@ header {
   position: absolute;
   right: 0;
 }
-
 .ul .li {
   width: 10vw;
   margin: 10px;
@@ -66,6 +70,10 @@ header {
 .ul .li:hover {
   background-color: white;
   color: black;
+}
+
+a {
+  font-size: 25px;
 }
 
 body {
@@ -118,8 +126,9 @@ body .footer {
 
 body .tituloFarmacias {
   text-align: center;
-  color: red;
-  font-size: 50px;
+  margin: 30px 0;
+  color: #03989e;
+  font-size: 40px;
   font-weight: 900;
 }
 body .farmasTurno {
@@ -137,8 +146,8 @@ body .farmasTurno .grid10 {
   display: grid;
   -ms-grid-columns: 30vh;
   grid-template-columns: 30vh;
-  -ms-grid-rows: 3vw 10vw;
-  grid-template-rows: 3vw 10vw;
+  -ms-grid-rows: 4vw 10vw;
+  grid-template-rows: 4vw 10vw;
       grid-template-areas: "titulo" "parrafo";
   padding: 9px;
 }
@@ -149,16 +158,20 @@ body .farmasTurno .grid10 .tituloGrid10 {
   grid-area: titulo;
   padding: 1px;
   text-align: center;
-  color: blue;
+  color: #0000ff;
   font-size: 30px;
+}
+body .farmasTurno .grid10 .tamañoDire {
+  color: blue;
+  font-size: 24px;
 }
 body .farmasTurno .grid10 .textoGrid10 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  background-color: #f4bc33;
+  background-color: #C1EDF1;
   grid-area: parrafo;
 }
-body .farmasTurno .grid10 :hover {
+body .farmasTurno .grid10:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
@@ -196,7 +209,7 @@ body .parrafoIoma1 {
           align-items: center;
 }
 body .fondo {
-  background-image: url(/kljabsfoihef.jpg);
+  background-image: url(../Imagenes/imagenioma.jpg);
 }
 
 body .imagenPami {

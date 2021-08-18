@@ -3,6 +3,10 @@ header{
     height: 20vh;
     width: 100vw;
     position: relative;
+
+    a{
+        @include estiloContacto(blue, 30px)
+    }
 }
 
 .logo{
@@ -26,33 +30,29 @@ header{
     align-items: center;
     position: absolute;
     right: 0;
+
+    .li{
+        width: 10vw;
+        margin: 10px;
+        text-align: center;
+        height: 10vh; 
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        transition: 0.5s;
+        
+}
 }
 
-.ul .li{
 
-width: 10vw;
-
-margin: 10px;
-
-text-align: center;
-
-height: 10vh;
-
-display: flex;
-
-justify-content: center;
-
-align-items: center;
-
-border-radius: 10px;
-
-transition: 0.5s;
-}
 
 .ul .li:hover{
     background-color: white;
     color: black;
 }
        
-   
+a{
+    font-size: 25px;
+}   
 

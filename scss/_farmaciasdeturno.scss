@@ -1,8 +1,8 @@
 body {
     .tituloFarmacias{
         text-align: center;
-        
-        @include estiloturno(red, 50px, 900)
+        margin:  30px 0;
+        @include estiloturno(#03989e, 40px, 900)
     }
 
     .farmasTurno {
@@ -15,7 +15,7 @@ body {
         .grid10{
             display: grid;
             grid-template-columns: 30vh ;
-            grid-template-rows: 3vw 10vw ;
+            grid-template-rows: 4vw 10vw ;
             grid-template-areas: 
             "titulo"
             "parrafo";
@@ -33,19 +33,28 @@ body {
                 grid-area: titulo;
                 padding: 1px;
                 text-align: center;
+                
+    
 
-                @include estiloContacto(blue, 30px)
+                @include estiloContacto(#0000ff, 30px)
+
+                
+            }
+            .tamañoDire{
+                color:blue;
+                font-size: 24px;
             }
 
+            
             .textoGrid10{
-                background-color: #f4bc33;
+                background-color: #C1EDF1;
                 grid-area: parrafo;
             
             }
             
         } 
 
-        .grid10 :hover {
+        .grid10:hover {
             transform: scale(1.1);
             box-shadow: 5px 5px 15px rgb(0 0 0 / 60%);
             transition-delay: 0.1s;
