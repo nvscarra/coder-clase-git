@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* PASO 1: EN EL HTML ARMAR LOS ELEMENTOS CON UN PADRE Y TODOS LOS HIJOS DENTRO */
+
+/* PASO 2: EN CSS, AL PADRE LE DOY: DISPLAY GRID, GRID TEMPLATE COLUMNS Y GRID TEMPLATE ROWS */
+
+/* PASO 3: DEFINIR GRID TEMPLATE AREAS */
+
+/* PASO 4: LE INDICO A CADA HIJO QUE GRID AREA TIENE QUE OCUPAR */
+
+
+header{
+    background-color: blue;
+    height: 15vh;
+    width: 100vw;
+    position: relative;
+}
+
+.logo{
+    background-color: red;
+    height: 15vh;
+    width: 15vw;
+    position: absolute;
+    left: 2vw;
+    background-image: url(img/daft1.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+
+ul{
+    height: 15vh;
+    width: 60vw;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+ul li{
+
+width: 10vw;
+
+margin: 10px;
+
+text-align: center;
+
+height: 10vh;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+border-radius: 10px;
+
+transition: 0.5s;
+}
+
+ul li:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+/* PASO 1: EN EL HTML ARMAR LOS ELEMENTOS CON UN PADRE Y TODOS LOS HIJOS DENTRO */
+
+/* PASO 2: EN CSS, AL PADRE LE DOY: DISPLAY GRID, GRID TEMPLATE COLUMNS Y GRID TEMPLATE ROWS */
+
+/* PASO 3: DEFINIR GRID TEMPLATE AREAS */
+
+/* PASO 4: LE INDICO A CADA HIJO QUE GRID AREA TIENE QUE OCUPAR */
+
+.grid2{
+    margin: 100px 0px;
+    display: grid;
+    grid-template-columns: 40vw 20vw 20vw;
+    grid-template-rows: 45vh 25vh 25vh;
+    grid-template-areas: 
+    "imagen1 imagen1 imagen1"
+    "imagen2 imagen3 imagen3"
+    "imagen2 imagen4 imagen5";
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.grid2 div{
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.grid2 div:hover{
+    border-radius: 50px;
+}
+
+
+.imagen1{
+    grid-area: imagen1;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5a0dd6831f318dcf5130a0d5/1575558143599-OE8SM1HJJ039Z5JJFI84/images+%281%29.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.imagen2{
+    grid-area: imagen2;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://updatemexico.com/wp-content/uploads/2021/03/daft-punk-discovery-banner-1.jpg);
+}
+
+.imagen3{
+    grid-area: imagen3;
+    background-image: url(https://indiehoy.com/wp-content/uploads/2020/04/daft-punk-1200x900.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.imagen4{
+    grid-area: imagen4;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to top,
+    rgba(0, 255, 0, 0.7),
+    rgba(0, 0, 255, 0.8)),url(https://classicalbumsundays.com/wp-content/uploads/2016/08/daft-punk-700x421.jpeg)
+    ;
+}
+
+.imagen5{
+    grid-area: imagen5;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://i.ytimg.com/vi/PXYeARRyDWk/maxresdefault.jpg);
+}
+
+
+
+.giras{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.giras div{
+    width: 30vw;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 2.5vw;
+}
+
+.giras div .fondo{
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2460fe2b-ed66-47ba-b075-8f64c9ae8d07/d7ecxnm-0a8f9d05-4adb-4631-9c72-f8c32ac75d82.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI0NjBmZTJiLWVkNjYtNDdiYS1iMDc1LThmNjRjOWFlOGQwN1wvZDdlY3hubS0wYThmOWQwNS00YWRiLTQ2MzEtOWM3Mi1mOGMzMmFjNzVkODIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JsbGnohqaqf-8t7w9SPTWUnibuxHh3TSNgtSbeRCqCQ);
+    width: 25vw;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.giras div h3{
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.final{
+    background-color: white;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

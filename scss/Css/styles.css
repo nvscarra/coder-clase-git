@@ -1,0 +1,535 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration:none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.grid{
+    background-image: linear-gradient( White, MistyRose);
+}
+
+
+header{
+    display: flex;
+    justify-content: flex-end;  
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+
+nav{
+    display: flex;
+    
+    justify-content:flex-end;
+    
+    width: 100%;
+   padding: 15px;
+
+   
+
+
+}
+
+.nav .parrafoAzul{
+    background-image: url(https://www.ocu.org/-/media/ocu/images/home/salud/coronavirus/corona_virus_desavastecimiento_medicamentos_1600x900.jpg?rev=50365aa1-b7dc-475b-aaff-55258b5ea1aa&hash=DD3D967EFD5BC918046FC05FE81AC1A0);
+}
+
+
+
+
+.parrafoAzul{
+
+   
+    border: 5px;
+    padding: 50px;
+    display: flex;
+    flex-direction:row;
+    /* background-color:#00FFFF; */
+    justify-content: center;
+    text-align: center
+}
+
+.parrafoAzul{
+    font-size: 2rem;
+    /* transition: all 2s;
+    border-radius: 25px; */
+}
+
+/* .parrafoAzul:hover{
+    
+    background-color: #ADFF2F;
+} */
+
+.section{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+    border: 10px;
+    margin: 10px;
+    
+    
+}
+
+
+
+/* .imagen2{
+    width: 612px;
+    height: 408px;
+    padding: 20px;
+}
+.imagen1{
+    width: 612px;
+    height: 408px;
+    padding: 20px;
+
+    
+} */
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    
+    
+}
+/* .farmaPorve{
+  display: flex;
+    color: green;
+    font-weight: bolder;
+    text-align: center;
+    
+
+} */
+
+
+
+
+
+
+.footer{
+    background-color: #6BEEB0;
+    /* color:#6BEEB0; */
+}
+
+ul li{
+    color: red;
+   
+}
+/* pertenece a obras sociales */
+ol li{
+    color: blue;
+}
+
+a {
+    color: blue;
+    width: 10px;
+    margin: 5px;
+}
+
+
+/* table{
+    background-color: yellow;
+    border:red;
+} */
+
+h3{
+    color:blue;
+    font-weight:bolder;
+}
+
+h3{
+    text-decoration:solid;
+    
+}
+
+.primerasMarcas {
+    text-emphasis-color: red;
+    
+}
+
+.logoFarma{
+    width: 200px;
+    height: 200px;
+    margin-right: 130px; 
+}
+
+
+
+
+#menu {
+    
+    width: 100vw;
+    margin: 25px 0;
+    
+
+    padding: 10px;
+    font-size: 25px;
+    
+    
+  
+    height: 50px;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    border-radius: 15px;
+   }
+     
+   ul#menu li {
+    color: #fff;
+    float: left;
+    list-style: none;
+    margin: 0 45px ;
+   }
+     
+   ul#menu li:hover{
+    color: #aaa073;
+    cursor:pointer;
+   }
+
+  
+     
+   ul#menu ul {
+    display: none;
+    position: relative;
+    top: 2px;
+    background: #6BEEB0;
+    color:blue;
+    
+    
+
+
+    }
+     
+   ul#menu ul li{
+    float:none;
+    color: #fff;
+    width: 100%;
+    margin: 1% 0%;
+   }
+    
+    
+   ul#menu ul li a{
+    color: #fff;
+   }
+     
+   ul#menu ul li a:hover{
+    color: blue;
+    cursor:pointer;
+   }
+     
+    /* ul#menu li:hover ul ul,
+   ul#menu li:hover ul ul ul,
+   ul#menu li.iehover ul ul,
+   ul#menu li.iehover ul ul ul {
+    display: none;
+    cursor:pointer;
+   }  */
+     
+   ul#menu li:hover ul,
+   ul#menu ul li:hover ul,
+   ul#menu ul ul li:hover ul,
+   ul#menu li.iehover ul,
+   ul#menu ul li.iehover ul,
+   ul#menu ul ul li.iehover ul {
+    display: block;
+    cursor:pointer;
+   }
+   
+
+ .grid1{
+     display: grid;
+     grid-template-columns: 20vw 50vw ;
+     grid-template-rows:  10vh 30vh;
+     grid-template-areas: 
+     "imagen";
+ }
+
+ .imagenesSeccion2{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin: 40px 0;
+     
+
+
+ }
+
+ .parrafoPami{
+     font-size: 25px;
+    margin: 25px;
+    padding: 15px;
+    color: black;
+ }
+ .parrafoPami1{
+     font-size: 25px;
+     color: black;
+     margin: 25px;
+     list-style:disc;
+ }
+
+.imagenPami{
+    margin: 10px;
+ }
+
+.parrafoIoma{
+    font-size: 25px;
+    margin: 25px;
+    color: black;
+}
+
+.parrafoIoma1{
+font-size: 25px;
+margin: 25px;
+color: black;
+list-style: disc;
+}
+.imagenIoma{
+    height: 820px;
+    width: auto;
+    margin: 10px;
+   
+}
+.imagenIoma1{
+    display: inline-flex;
+    margin: 100px;
+   
+   
+   
+}
+
+
+
+.tituloFarmacias{
+    text-align: center;
+}
+
+.grid10{
+    display: grid;
+    grid-template-columns: 30vh ;
+    grid-template-rows: 3vw 10vw ;
+    grid-template-areas: 
+    "titulo"
+    "parrafo";
+    padding: 9px;
+    
+} 
+
+
+.tituloGrid10{
+    background-color: burlywood;
+    grid-area: titulo;
+    padding: 1px;
+    text-align: center;
+}
+
+.textoGrid10{
+    background-color: cornsilk;
+    grid-area: parrafo;
+
+}
+
+.farmasTurno {
+    display: inline-flex;
+    justify-content: space-between;
+     flex-wrap: wrap;
+    
+}
+
+/* .imagenBabelito{
+    padding: 100px;
+} */
+ 
+.marquee{
+    width: 100vw;
+    
+}
+
+@media screen and (max-width:800px) {
+
+    .img-prin {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+       flex-wrap: wrap;
+    }
+
+    .imagenesSeccion2{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+       flex-wrap: wrap;
+    }
+
+    .imagenBabelito{
+        
+        display: none;
+    }
+
+    *{
+        padding: 0px;
+       
+        text-decoration:none;
+        list-style: none;
+        
+    }
+
+    nav{
+        display: flex;
+        
+        justify-content:flex-end;
+        
+        width: 70%;
+       padding: 15px;
+    
+    
+    }
+
+    .logoFarma{
+        width: 0px;
+        height: 0px;
+    }
+
+    
+
+    #menu {
+   
+    width: 100vw;
+    
+    
+
+    padding: 10px;
+    font-size: 25px;
+    
+    
+  
+    
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+   }
+
+
+   .seccion1{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+
+   .parrafoAzul{
+       width: 100vw;
+       height: 100px;
+       font-size: 15px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 5px;
+
+    }
+
+    .nuevaImagen{
+        background-image: url(https://mecaluxar.cdnwm.com/blog/img/robots-de-farmacia.1.10.jpg);
+        width: 100%;
+        height: auto;
+    
+    }
+
+    
+    
+
+    
+
+    /* .imagenesSeccion2{
+        display: flex;
+        flex-direction:row;
+        justify-content:center;
+        border: 20px;
+        margin: 20px;
+        padding: 20px;
+
+
+    } */
+
+
+
+   
+
+
+
+    .imagenBabelito{
+        width: 70%;
+        height: auto;
+    }
+
+
+}    
+  
+
+
+
+.imagenWsp1, .imagenWsp2{
+    margin: 5px;
+    
+    
+
+}
+
+/* .img-prin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+} */
+
+
+.imagenBabelito{
+    margin: 200px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.nuevaImagen{
+    background-image: url(https://mecaluxar.cdnwm.com/blog/img/robots-de-farmacia.1.10.jpg);
+    position: relative;
+    height: 100%;
+    width: auto;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    
+    
+
+}
+
+.textoParrafo{
+    font-size: 35px;
+    
+}
+
+.seccion2{
+    margin: 30px;
+    opacity:none;
+}
+
+.nuevoLogo{
+    background-image: linear-gradient( #6BEEB0 , white);
+}
+
+.contacto{
+    margin: 20px;
+    margin-top: 180px;
+}
+
+.contacto2{
+    margin: 20px;
+}
+
+

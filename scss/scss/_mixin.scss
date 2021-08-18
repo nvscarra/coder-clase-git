@@ -1,0 +1,19 @@
+@mixin estiloturno ($color, $size, $weigth){
+    color: $color;
+    font-size: $size;
+    font-weight: $weigth;
+}
+
+@mixin estiloContacto ($color, $size){
+    color: $color;
+    font-size: $size;
+    
+}
+
+@mixin flex ($display, $jc, $fw){
+    display: $display;
+    justify-content: $jc;
+    flex-wrap: $fw;
+    
+}
+    
