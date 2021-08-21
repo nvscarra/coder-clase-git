@@ -2,7 +2,7 @@ body {
     .tituloFarmacias{
         text-align: center;
         margin:  30px 0;
-        @include estiloturno(#03989e, 40px, 900)
+        @include estiloturno(#03989e, 35px, 900)
     }
 
     .farmasTurno {

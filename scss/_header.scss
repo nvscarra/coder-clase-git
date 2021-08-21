@@ -5,7 +5,7 @@ header{
     position: relative;
 
     a{
-        @include estiloContacto(blue, 30px)
+        @include estiloContacto(blue, 23px)
     }
 }
 
@@ -17,6 +17,12 @@ header{
     background-image: url(../Imagenes/logo.png);
     background-size: contain;
     }
+
+    .logo:hover {
+        transform: scale(1.1);
+        box-shadow: 5px 5px 15px rgb(0 0 0 / 60%);
+        transition-delay: 0.1s;
+        transition: 0.5s ease;}
    
 
 
