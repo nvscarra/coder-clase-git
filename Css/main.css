@@ -2,10 +2,10 @@
 * {
   padding: 0px;
   margin: 0px;
-  text-decoration: none;
   list-style: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
 }
 
 header {
@@ -16,7 +16,7 @@ header {
 }
 header a {
   color: blue;
-  font-size: 30px;
+  font-size: 23px;
 }
 
 .logo {
@@ -26,6 +26,17 @@ header a {
   left: 2vw;
   background-image: url(../Imagenes/logo.png);
   background-size: contain;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .ul {
@@ -79,27 +90,6 @@ a {
 body {
   font-family: "Nunito", sans-serif;
 }
-body .seccion1 .parrafoAzul {
-  color: blue;
-  font-weight: bolder;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-  border: 5px;
-  padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  /* background-color:#00FFFF; */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  font-size: 2rem;
-}
 body .seccion1 .nuevaImagen {
   position: relative;
   height: 100%;
@@ -107,19 +97,19 @@ body .seccion1 .nuevaImagen {
   background-image: url(../Imagenes/imagensection2.png);
 }
 body .seccion1 .nuevaImagen .seccion2 {
-  margin: 90px;
-  margin: 30px;
+  margin: 10px;
   opacity: none;
 }
 body .seccion1 .nuevaImagen .seccion2 .textoParrafo {
   font-size: 35px;
   color: white;
-  padding: 50px;
+  padding: 30px;
 }
 body .marquee {
   width: 100vw;
 }
 body .footer {
+  color: black;
   background-color: #039890;
   text-align: center;
 }
@@ -128,7 +118,7 @@ body .tituloFarmacias {
   text-align: center;
   margin: 30px 0;
   color: #03989e;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 900;
 }
 body .farmasTurno {
@@ -215,6 +205,29 @@ body .fondo {
 body .imagenPami {
   margin: 10px;
 }
+body .imagenPami1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 5vw 40vw;
+}
+body .imagenPami1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
 body .parrafoPami {
   font-size: 25px;
   margin: 25px;
@@ -226,8 +239,12 @@ body .parrafoPami1 {
   color: black;
   margin: 25px;
   list-style: disc;
+  margin-left: 60px;
 }
 
+body {
+  font-size: 23px;
+}
 body .contacto {
   margin: 0 150px;
 }
@@ -235,6 +252,22 @@ body .contacto2 {
   margin: 20px;
 }
 body .contactoo {
-  background-image: url(https://www.ofx.com/-/media/images_for_modules/modules/ml018%20-%20generic%20hero/blog/cs-342%20medical-tourisim-header-1600x600.ashx?hash=B1C009ADE22C991B6EB2EE16AA546F67);
-  background-position: center;
+  background-image: url(https://www.consalud.es/uploads/s1/13/43/98/1/medicamento-inyectable.jpeg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .consejos {
+  margin: 50 0 0px;
+}
+body .palme {
+  padding: 0 0 20px;
+  margin: 0 0 15px;
 }
